@@ -55,7 +55,7 @@ while not exit:
     currentTime = time.time()
     
     if currentTime - lastTime >= interval:
-        pickNewImage()
+        pickNewImage(IMAGES_LIST)
         lastTime = currentTime
         
     pygame.display.update()
